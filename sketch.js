@@ -38,14 +38,13 @@ function countNum (){
 
   newInterval(random(0,86400));
 
-  if (counter = 0) {
-    counter = end;
-  }
 }
 
 function newInterval(poi){
   setTimeout(countNum,poi*1000);
-
+  if (counter = 0) {
+    counter = end;
+  }
 }
 
 
