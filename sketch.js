@@ -36,7 +36,7 @@ function countNum (){
 
   timer.html(floor(counter));
 
-  newInterval(random(0,10));
+  newInterval(random(0,60));
 
 }
 
