@@ -14,7 +14,7 @@ function setup() {
 }
 
 function countNumber (){
-  if (counter > 100) {counter = counter - random(0,100);
+  if (counter > 200) {counter = counter - random(0,100);
   counter = counter + random(0,10);
 
   } else {
