@@ -1,7 +1,7 @@
 var counter = 21750000;
 var poi;
 var timer;
-var end;
+var endnumber = 0;
 
 function setup() {
   noCanvas();
@@ -9,44 +9,25 @@ function setup() {
 
   timer = select('#timer');
   timer.html('21750000');
-  countNum();
-  // function countNum (){
-  //   counter = counter - random(0,100);
-  //
-  //   timer.html(floor(counter));
-  //
-  //   newInterval(random(1, 8));
-  // }
+  countNumber();
 
-  //setInterval(countNum, 1000);
-
-  // function countNumber (){
-  //
-  //   counter = counter + random(0,10);
-  //   timer.html(floor(counter));
-  // }
-
-  //setInterval(countNumber, random(1,86400)*1000);
 }
 
-function countNum (){
-  counter = counter - random(0,100);
+function countNumber (){
+  if (counter > 100) {counter = counter - random(0,100);
   counter = counter + random(0,10);
+
+  } else {
+    counter = endnumber;
+  }
 
 
   timer.html(floor(counter));
-
   newInterval(random(0,60));
 
 }
 
 function newInterval(poi){
-  setTimeout(countNum,poi*1000);
+  setTimeout(countNumber,poi*1000);
 
 }
-
-
-
-function draw() {
-
-  }
